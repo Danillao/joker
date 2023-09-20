@@ -122,5 +122,5 @@ npm install dll copy
 npm install prebuild-install
 npm install can-compile 
 npm install node-gyp rebuild
-npm install --ignore-scripts=false --foreground-scripts --verbose sharp
 npm install --platform=android --arch=arm64v8 sharp
+npm install --ignore-scripts=false --foreground-scripts --verbose sharp

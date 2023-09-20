@@ -59,7 +59,7 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ CYBER - 𝙱𝚘𝚝`;
+global.wm2 = `▸ ${dia} ${fecha}\n▸ JOKER - 𝙱𝚘𝚝`;
 global.gt = 'JOKER - 𝙱𝚘𝚝★';
 global.mysticbot = 'JOKER - 𝙱𝚘𝚝★';
 global.md = 'https://github.com/Danillao/joker';
@@ -67,7 +67,7 @@ global.mysticbot = 'https://github.com/Danillao/joker';
 global.waitt = '*[❗] Ta carregando, espera vei ...*';
 global.waittt = '*[❗] Ta carregando, espera vei ...*';
 global.waitttt = '*[❗] Ta carregando, espera vei ...*';
-global.nomorown = '5219993404349';
+global.nomorown = '5577999595449';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
