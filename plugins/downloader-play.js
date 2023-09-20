@@ -9,7 +9,7 @@ import fs from 'fs';
 const limit1 = 100;
 const limit2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]  NOME DA CANÇÃO, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 INSIRA O COMANDO 𝙼𝙰I𝚂 O NOME/𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝙰𝙻𝙶𝚄M𝙰 CANÇÃO QUE SEJA 𝚅𝙸𝙳𝙴𝙾 𝙳O 𝚈𝙾𝚄𝚃𝚄𝙱𝙴*\n\n*—◉ EXEMPLO:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`;
+  if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] NOME DA CANÇÃO, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 INSIRA O COMANDO 𝙼𝙰I𝚂 O NOME/𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝙰𝙻𝙶𝚄M𝙰 CANÇÃO QUE SEJA 𝚅𝙸𝙳𝙴𝙾 𝙳O 𝚈𝙾𝚄𝚃𝚄𝙱𝙴*\n\n*—◉ EXEMPLO:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -170,7 +170,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
       }}
     }*/}
   } catch {
-    throw '*[❗] Error, por favor vuelva a intentarlo.*';
+    throw '*[❗] Error, por favor tente novamente.*';
   }
 };
 handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');

@@ -12,8 +12,8 @@ const credentials = {
 };
 const spotify = new Spotify.default(credentials);
 
-const handler = async (m, { conn, text }) => {
- if (!text) throw `*[❗] Ingrese el nombre de alguna canción de spotify.*`;
+const handler = async (m, {conn, text}) => {
+  if (!text) throw `*[❗] Insira o nome de alguma musica do spotify.*`;
   try {
     const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`);
     const jsonDL = await resDL.json();
@@ -25,10 +25,10 @@ const handler = async (m, { conn, text }) => {
     const randomName = getRandom('.mp3');
     const filePath = `./tmp/${randomName}`;
     const artist = spty.data.artists.join(', ') || '-';
-    const img = await (await fetch(`${spty.data.cover_url}`)).buffer()  
+    const img = await (await fetch(`${spty.data.cover_url}`)).buffer();
     const letra_s = await find_lyrics(spty.data.name ? spty.data.name : '');
     let letra;
-    letra = `${letra_s ? letra_s + '\n\n🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖' : '🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖'}`  
+    letra = `${letra_s ? letra_s + '\n\n🤴🏻 Baixado por Lion e JOKER-Bot-MD 🤖' : '🤴🏻 Baixado por Lion e JOKER-Bot-MD 🤖'}`;
     const tags = {
       title: spty.data.name || '-',
       artist: artist,
@@ -50,24 +50,24 @@ const handler = async (m, { conn, text }) => {
           name: 'front cover',
         },
         description: 'Spotify Thumbnail',
-        imageBuffer: await axios.get(spty.data.cover_url, {responseType: "arraybuffer"}).then((response) => Buffer.from(response.data, "binary")),
+        imageBuffer: await axios.get(spty.data.cover_url, {responseType: 'arraybuffer'}).then((response) => Buffer.from(response.data, 'binary')),
       },
       mimetype: 'image/jpeg',
       copyright: 'Copyright Darlyn ©2023',
     };
     await fs.promises.writeFile(filePath, spty.audio);
     await NodeID3.write(tags, filePath);
-    let spotifyi = `*• 💽 Spotify Download •*\n\n`
-         spotifyi += `	◦  *Título:* ${spty.data.name}\n`
-         spotifyi += `	◦  *Artista:* ${spty.data.artists}\n`
-         spotifyi += `	◦  *Album:* ${spty.data.album_name}\n`                 
-         spotifyi += `	◦  *Publicado:* ${spty.data.release_date}\n\n`   
-         spotifyi += `El audio se esta enviando, espere un momento..`
-    await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": linkDL, "sourceUrl": linkDL}}}, {quoted: m});
+    let spotifyi = `*• 💽 Spotify Download •*\n\n`;
+    spotifyi += `	◦  *Título:* ${spty.data.name}\n`;
+    spotifyi += `	◦  *Artista:* ${spty.data.artists}\n`;
+    spotifyi += `	◦  *Album:* ${spty.data.album_name}\n`;
+    spotifyi += `	◦  *Publicado:* ${spty.data.release_date}\n\n`;
+    spotifyi += `O audio está sendo enviado, espere um momento..`;
+    await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {'forwardingScore': 9999999, 'isForwarded': true, 'externalAdReply': {'showAdAttribution': true, 'containsAutoReply': true, 'renderLargerThumbnail': true, 'title': global.titulowm2, 'containsAutoReply': true, 'mediaType': 1, 'thumbnail': img, 'thumbnailUrl': img, 'mediaUrl': linkDL, 'sourceUrl': linkDL}}}, {quoted: m});
     await conn.sendMessage(m.chat, {audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*[❗] Error, no se encontraron resultados.*';
+    throw '*[❗] Error, não foram encontrados resultados.*';
   }
 };
 handler.command = /^(spotify|music)$/i;
@@ -79,12 +79,12 @@ async function spotifydl(url) {
       const res = await spotify.getTrack(url);
       const timeoutPromise = new Promise((_, reject) => {
         setTimeout(() => {
-          reject(new Error('Tiempo de espera agotado'));
+          reject(new Error('Tempo de espera esgotado'));
         }, 300000);
       });
       const audioPromise = spotify.downloadTrack(url);
       const audio = await Promise.race([audioPromise, timeoutPromise]);
-      resolve({ data: res, audio });
+      resolve({data: res, audio});
     } catch (error) {
       reject(error);
     }

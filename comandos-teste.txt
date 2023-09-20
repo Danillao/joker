@@ -111,10 +111,26 @@ apkmod | modapk
 pinterest <keyword>
 play | play2
 play.1 | play.2 
+play3 | playdoc
+playlist <texto>
+tiktokfoto
+ringtone
+soundcloud
+spotify
+stickerpack
 
 
 menu | help | info
 menu2 | audios
+
+
+
+
+
+
+
+
+
 
 
 npm install libvips
