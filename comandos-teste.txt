@@ -1,0 +1,118 @@
+antilink
+antilink2
+antitoxic
+
+nsfwfoot
+nsfwass
+nsfwbdsm
+nsfwcum
+nswero
+nsfwfemdom
+nsfwglass
+hentai
+nsfworgy
+tetas
+booty
+ecchi
+furro
+trapito
+imagenlesbians
+panties
+pene
+porno
+randomxxx
+pechos
+yaoi
+yaoi2
+yuri
+yuri2
+hentaipdf
+hentaisearch
+pack
+pack2
+pack3
+videoxxx
+videoxxxlesbi
+xnxxdl
+xnxxsearch
+xvideosdl 
+
+afk
+start
+next
+leave
+
+audio bass/deep
+
+anime <nomeanime>
+ghs -> githubsearch <nomeRepo>
+google <pesquisa>
+lirik <pesquisa>
+pelisplus <pesquisa>
+playstore <app>
+sticker | search
+stickersearch2
+wiki <pesquisa>
+ytsearch *<texto>*
+setcmd <comando>
+delcmd
+listcmd
+enable
+en
+dis
+welcome
+detect
+detect2
+antiporno
+delete
+antidelete
+antilink
+antilink2
+antiviewonce
+modohorny
+modoadmin
+autosticker
+restrict
+audios_bot
+nyimak
+autoread
+pconly
+privateonly
+gconly
+grouponly
+statusonly
+anticall
+antiprivado
+modejadibot
+antispam
+antitoxic
+antitraba
+antiarabes
+antiarabes2
+
+toanime
+togifaud
+toimg
+toaudio (mp3|audio)
+tovn (reply)
+tourl
+tovideo
+tts <lang><text>
+g?tts2
+
+facebook | fb
+gdrive
+gitclone
+instagram | instagramdl
+igstalk <nome>
+gimage <query>
+mediafire
+apkmod | modapk
+pinterest <keyword>
+play | play2
+play.1 | play.2 
+
+
+menu | help | info
+menu2 | audios
+

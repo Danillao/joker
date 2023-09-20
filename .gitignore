@@ -1,0 +1,14 @@
+#| Folders |#
+
+.github
+node_modules
+tmp
+jadibts
+pluginpilot
+plugins/supersecretlistener.js
+datasecret
+
+#| Files |#
+
+package-lock.json
+database.json
