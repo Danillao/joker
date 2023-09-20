@@ -26,9 +26,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ║➤ *Olá, ${taguser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *Donos:* Jet Laser & Lion Design
-║➤ *Numero:* wa.me/55998471647
-║➤ *Bot ofc:* wa.me/5219991402134
-║➤ *Bot ofc 2:* wa.me/5219993404349
+║➤ *Numero:* wa.me/5577998149521
+║➤ *Bot ofc:* wa.me/
+║➤ *Bot ofc 2:* wa.me/
 ║➤ *PayPal:* https://www.paypal.me/
 ║➤ *Fecha:* ${date}
 ║➤ *Tempo ativo:* ${uptime}
@@ -40,7 +40,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ *🎖️ Nivel:* ${level}
 ┣ *🧰 Experiencia:* ${exp}
-┣ *⚓ Rango:* ${role}
+┣ *⚓ Rank:* ${role}
 ┣ *💎 Diamantes:* ${limit}
 ┣ *👾 Coins:* ${money}
 ┣ *🪙 Tokens:* ${joincount}
@@ -232,10 +232,10 @@ ${readMore}
 ┣ ඬ⃟ 💎 _${usedPrefix}listanum *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kicknum *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}grupo *<abrir / cerrar>*_
-┣ ඬ⃟ 💎 _${usedPrefix}grouptime *<opcion> <tiempo>*_
+┣ ඬ⃟ 💎 _${usedPrefix}grouptime *<opção> <tempo>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}promote *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}demote *<@tag>*_
-┣ ඬ⃟ 💎 _admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+┣ ඬ⃟ 💎 _admins *<texto>*_ (uso sem prefixo)
 ┣ ඬ⃟ 💎 _${usedPrefix}demote *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}infogroup_
 ┣ ඬ⃟ 💎 _${usedPrefix}resetlink_
@@ -254,7 +254,7 @@ ${readMore}
 ┣ ඬ⃟ 💎 _${usedPrefix}listwarn_
 ┣ ඬ⃟ 💎 _${usedPrefix}fantasmas_
 ┣ ඬ⃟ 💎 _${usedPrefix}destraba_
-┣ ඬ⃟ 💎 _${usedPrefix}setpp *<imagen>*_
+┣ ඬ⃟ 💎 _${usedPrefix}setpp *<imagem>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓

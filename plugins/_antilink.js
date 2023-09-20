@@ -19,7 +19,7 @@ export async function before(m, {isAdmin, isBotAdmin}) {
     }
     await this.sendMessage(m.chat, {text: `*「 𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊𝐒 」*\n*𝙷𝙰𝚂𝚃𝙰 𝙻𝙰 𝚅𝙸𝚂𝚃𝙰 𝙱𝙰𝙱𝚈 👋 ${user} ROMPEU AS REGRAS DO GRUPO, SERÁ 𝙴𝚇𝚃𝙴𝚁𝙼𝙸𝙽𝙰𝙳𝙾...!!*`, mentions: [m.sender]}, {quoted: m});
     if (!isBotAdmin) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] O 𝙱𝙾𝚃 𝙽Ã𝙾 É 𝙰𝙳𝙼𝙸𝙽, NÃO PODE E𝚇𝚃𝙴𝚁𝙼𝙸𝙽𝙰𝚁 AS PESSOAS*');
-    if (isBotAdmin && bot.restrict) {
+    if (isBotAdmin && bot.restrict) { // Qualquer coisa retirar validação restrict
       await conn.sendMessage(m.chat, {delete: {remoteJid: m.chat, fromMe: false, id: bang, participant: delet}});
       const responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
       if (responseb[0].status === '404') return;
