@@ -7,7 +7,7 @@
 import {WAMessageStubType} from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 
-export async fumction before(m, {conn, participants}) {
+export async function before(m, {conn, participants}) {
   if (!m.messageStubType || !m.isGroup) return !0;
   const groupName = (await conn.groupMetadata(m.chat)).subject;
   const groupAdmins = participants.filter((p) => p.admin);
