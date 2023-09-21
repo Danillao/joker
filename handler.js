@@ -933,24 +933,25 @@ export async function handler(chatUpdate) {
         if (!('isBanned' in chat)) chat.isBanned = false;
         if (!('welcome' in chat)) chat.welcome = true;
         if (!('detect' in chat)) chat.detect = true;
-        if (!('detect2' in chat)) chat.detect2 = false;
+        if (!('detect2' in chat)) chat.detect2 = true;
+        if (!('antiimage' in chat)) chat.antiimage = true;
         if (!('sWelcome' in chat)) chat.sWelcome = '';
         if (!('sBye' in chat)) chat.sBye = '';
         if (!('sPromote' in chat)) chat.sPromote = '';
         if (!('sDemote' in chat)) chat.sDemote = '';
-        if (!('delete' in chat)) chat.antidelete = false;
+        if (!('delete' in chat)) chat.antidelete = true;
         if (!('modohorny' in chat)) chat.modohorny = false;
         if (!('autosticker' in chat)) chat.autosticker = false;
         if (!('audios' in chat)) chat.audios = false;
-        if (!('antiLink' in chat)) chat.antiLink = false;
-        if (!('antiLink2' in chat)) chat.antiLink2 = false;
-        if (!('antiviewonce' in chat)) chat.antiviewonce = false;
-        if (!('antiToxic' in chat)) chat.antiToxic = false;
-        if (!('antiTraba' in chat)) chat.antiTraba = false;
+        if (!('antiLink' in chat)) chat.antiLink = true;
+        if (!('antiLink2' in chat)) chat.antiLink2 = true;
+        if (!('antiviewonce' in chat)) chat.antiviewonce = true;
+        if (!('antiToxic' in chat)) chat.antiToxic = true;
+        if (!('antiTraba' in chat)) chat.antiTraba = true;
         if (!('antiArab' in chat)) chat.antiArab = false;
         if (!('antiArab2' in chat)) chat.antiArab2 = false;
         if (!('antiporno' in chat)) chat.antiporno = false;
-        if (!('modoadmin' in chat)) chat.modoadmin = false;
+        if (!('modoadmin' in chat)) chat.modoadmin = true;
         if (!('simi' in chat)) chat.simi = false;
         if (!isNumber(chat.expired)) chat.expired = 0;
       } else {
@@ -958,7 +959,8 @@ export async function handler(chatUpdate) {
           isBanned: false,
           welcome: true,
           detect: true,
-	        detect2: false,
+          detect2: true,
+          antiimage: true,
           sWelcome: '',
           sBye: '',
           sPromote: '',
@@ -1465,6 +1467,11 @@ export async function participantsUpdate({id, participants, action}) {
         this.sendMessage(id, {text, mentions: this.parseMention(text)});
       }
       break;
+
+      if (chat.antiimage) {
+        console.log(`Mensagem de imagem recebida`);
+      }
+      break;
   }
 }
 
@@ -1498,10 +1505,10 @@ export async function callUpdate(callUpdate) {
   for (const nk of callUpdate) {
     if (nk.isGroup == false) {
       if (nk.status == 'offer') {
-        const callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} não estão permitidas, será bloqueado.\n-\nSe acidentalmente ligou entre em contato com meu criador para que te desbloqueie!`, false, {mentions: [nk.from]});
+        const callmsg = await this.reply(nk.from, `olá *@${nk.from.split('@')[0]}*, as ${nk.isVideo ? 'videochamadas' : 'chamadas'} não estão permitidas, será bloqueado.\n-\nSe acidentalmente ligou entre em contato com meu criador para que te desbloqueie!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;JOKER BOT 👑;;;\nFN:JOKER BOT 👑\nORG:JOKER BOT 👑\nTITLE:\nitem1.TEL;waid=5219992095479:+521 999 209 5479\nitem1.X-ABLabel:JOKER BOT 👑\nX-WA-BIZ-DESCRIPTION:[❗] contate esse numero para coisas importantes.\nX-WA-BIZ-NAME:JOKER BOT 👑\nEND:VCARD`;
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;JOKER BOT 👑;;;\nFN:JOKER BOT 👑\nORG:JOKER BOT 👑\nTITLE:\nitem1.TEL;waid=55998149521:+5577999595449\nitem1.X-ABLabel:JOKER BOT 👑\nX-WA-BIZ-DESCRIPTION:[❗] contate esse numero para coisas importantes.\nX-WA-BIZ-NAME:JOKER BOT 👑\nEND:VCARD`;
         await this.sendMessage(nk.from, {contacts: {displayName: 'JOKER BOT 👑', contacts: [{vcard}]}}, {quoted: callmsg});
         await this.updateBlockStatus(nk.from, 'block');
       }
