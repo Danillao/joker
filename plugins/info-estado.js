@@ -1,24 +1,24 @@
 const handler = async (m, {conn}) => {
   try {
     const pp = imagen6;
-    const img = await(await fetch('https://github.com/BrunoSobrino.png')).buffer();
+    const img = '../Menu.png';
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const str = `╭────[ *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* ]
+    const str = `╭────[ *𝐓𝐡𝐞 *JOKER* - 𝐁𝐨𝐭* ]
 │
-│ *➤ ʜᴏʟᴀ ${taguser}*
+│ *➤ Olá ${taguser}*
 │
-│ *=> 🤖 ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:* ${uptime}
-│ *=> ✅ ʙᴏᴛ ᴅᴇ ᴜsᴏ ᴘᴜʙʟɪᴄᴏ*
-│ *=> 👑 ᴄʀᴇᴀᴅᴏʀ: Joker *
-│ *=> 🔗 contas ᴏғᴄ:* https://www.atom.bio/theshadowbrokers-team
+│ *=> 🤖 tempo ativo:* ${uptime}
+│ *=> ✅ Bot em uso publico*
+│ *=> 👑 criador: Joker *
+│ *=> 🔗 contas ᴏғᴄ:* https://www.atom.bio/
 ╰────────────────`.trim();
     if (m.isGroup) {
-      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {'forwardingScore': 9999999, 'isForwarded': true, 'mentionedJid': [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), 'externalAdReply': {'showAdAttribution': true, 'containsAutoReply': true, 'renderLargerThumbnail': true, 'title': global.titulowm, 'containsAutoReply': true, 'mediaType': 1, 'thumbnail': pp, 'mediaUrl': `https://www.atom.bio/theshadowbrokers-team`, 'sourceUrl': `https://www.atom.bio/theshadowbrokers-team`}}}, {quoted: m});
+      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {'forwardingScore': 9999999, 'isForwarded': true, 'mentionedJid': [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), 'externalAdReply': {'showAdAttribution': true, 'containsAutoReply': true, 'renderLargerThumbnail': true, 'title': global.titulowm, 'containsAutoReply': true, 'mediaType': 1, 'thumbnail': pp, 'mediaUrl': `https://www.atom.bio/`, 'sourceUrl': `https://www.atom.bio/`}}}, {quoted: m});
     } else {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {'forwardingScore': 9999999, 'isForwarded': true, 'mentionedJid': [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), 'externalAdReply': {'showAdAttribution': true, 'containsAutoReply': true, 'renderLargerThumbnail': true, 'title': global.titulowm, 'containsAutoReply': true, 'mediaType': 1, 'thumbnail': pp, 'mediaUrl': `https://www.atom.bio/theshadowbrokers-team`, 'sourceUrl': `https://www.atom.bio/theshadowbrokers-team`}}}, {quoted: fkontak2});
+      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {'forwardingScore': 9999999, 'isForwarded': true, 'mentionedJid': [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), 'externalAdReply': {'showAdAttribution': true, 'containsAutoReply': true, 'renderLargerThumbnail': true, 'title': global.titulowm, 'containsAutoReply': true, 'mediaType': 1, 'thumbnail': pp, 'mediaUrl': `https://www.atom.bio/`, 'sourceUrl': `https://www.atom.bio/`}}}, {quoted: fkontak2});
     }
   } catch {
   }

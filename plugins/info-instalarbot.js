@@ -5,8 +5,8 @@ const handler = async (m, {conn, usedPrefix}) => {
 > Tutorial: https://youtu.be/eC9TfKICpcY
 > Pagina Oficial: https://boxmineworld.com
 > Dashboard: https://dash.boxmineworld.com/home
-> Panel: https://panel.boxmineworld.com
-> Soporte: https://discord.gg/84qsr4v 
+> Painel: https://panel.boxmineworld.com
+> Suporte: https://discord.gg/
 
 ------------------------------------
 —◉ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻-𝚃𝙴𝚁𝙼𝚄𝚇
@@ -19,7 +19,7 @@ const handler = async (m, {conn, usedPrefix}) => {
 - cd && termux-setup-storage
 - apt-get update -y && apt-get upgrade -y
 - pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
-- git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD.git && cd TheMystic-Bot-MD
+- git clone https://github.com/Danillao/joker && cd joker
 - yarn install
 - npm install
 - npm update
@@ -27,20 +27,20 @@ const handler = async (m, {conn, usedPrefix}) => {
 
 ------------------------------------
 
-—◉ ✔️ ACTIVAR EN CASO DE DETENERSE EN TERMUX ✔️
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd TheMystic-Bot-MD
+—◉ ✔️ ATIVAR EM CASO DE POSSUIR ELE NO TERMUX ✔️
+ESCREVA OS SEGUINTES COMANDOS UM POR UM:
+> cd joker
 > npm start
 
 ------------------------------------
 
-—◉ 👽 OBTENER OTRO CODIGO QR EN TERMUX 👽
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd TheMystic-Bot-MD
+—◉ 👽 OBTER OUTRO CODIGO QR EM TERMUX 👽
+ESCREVA OS SEGUINTES COMANDOS UM POR UM:
+> cd joker
 > rm -rf MysticSession
 > npm start`.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'document': {url: `https://github.com/Danillao/joker`},
     'mimetype': `application/${document}`,
     'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
     'fileLength': 99999999999999,
@@ -49,13 +49,13 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaUrl': 'https://github.com/Danillao/joker',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
         'body': wm,
         'thumbnail': imagen1,
-        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
+        'sourceUrl': 'https://www.youtube.com/channel/'}},
     'caption': text,
     'footer': wm,
     // 'buttons':[

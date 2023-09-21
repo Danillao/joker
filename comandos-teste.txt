@@ -118,11 +118,57 @@ ringtone
 soundcloud
 spotify
 stickerpack
+tiktokstalk
+x | xdl
+wallpaper2
+ytadoc
+audio | dlmp3
+ytmetadata | ytest
+ytmp4doc | ytvdoc
+video | dlmp4
+videodoc | ytshort
+fixmsgespera|ds
+dsowner| clearallsession
 
+/*
+*
+*/
 
+bot | info bot
+corona | covid | covid19
+owner | creator | creador | propietario
+donar | apoyar
+estado | status
+groups | grouplist
+linkgc | grupos
+horario
+ping | speed | infobot
+instalarbot
+listprem | premlist
+speedtest? | test
+términos y condiciones ***
+
+/*
+*
+*/
+
+animes | menuanimes
 menu | help | info
 menu2 | audios
-
+cajafuerte
+menulabiblia | labiblia
+/*
+*
+*/
+actualizar | actualizacion
+agregar(vn|msg|video|audio|img|sticker)
+addprem | userpremium
+addd | dard
+añadirxp | addexp
+autoadmin
+banchat
+banlist(ned)
+banuser
 
 
 
@@ -140,3 +186,7 @@ npm install can-compile
 npm install node-gyp rebuild
 npm install --platform=android --arch=arm64v8 sharp
 npm install --ignore-scripts=false --foreground-scripts --verbose sharp
+npm i 
+yarn install 
+npm update
+npm start

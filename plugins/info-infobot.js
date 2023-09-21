@@ -22,10 +22,10 @@ const handler = async (m, {conn, usedPrefix}) => {
   const neww = performance.now();
   const speed = neww - old;
   const info = `
-╠═〘 𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 〙 ═
+╠═〘 𝐈𝐍𝐅𝐎 𝐃𝐎 𝐁𝐎𝐓 〙 ═
 ╠
-╠➥ [🤴🏻] CRIADOR: *LION*
-╠➥ [#️⃣] 𝙽𝚄𝙼𝙴𝚁𝙾: *+55 999 595 449*
+╠➥ [🤴🏻] CRIADOR: *JOKER*
+╠➥ [#️⃣] 𝙽𝚄𝙼𝙴𝚁𝙾: *+5577998149521*
 ╠➥ [🎳] PREFIXO: *${usedPrefix}*
 ╠➥ [🔐] 𝙲𝙷𝙰𝚃𝚂 𝙿𝚁𝙸𝚅𝙰𝙳𝙾𝚂: *${chats.length - groups.length}*
 ╠➥ [🦜] 𝙲𝙷𝙰𝚃𝚂 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂: *${groups.length}* 
@@ -43,7 +43,7 @@ const handler = async (m, {conn, usedPrefix}) => {
 ╠➥ [👨‍🦯] 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳E: 
 ╠  *${speed} ms* 
 ╠
-╠═〘 THE ROCKET - BOT 〙 ═
+╠═〘 THE JOKER - BOT 〙 ═
 `.trim();
   const doc = [
     'pdf',
@@ -54,7 +54,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    document: {url: `https://github.com/`},
     mimetype: `application/${document}`,
     fileName: `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
     fileLength: 99999999999999,
@@ -63,13 +63,13 @@ const handler = async (m, {conn, usedPrefix}) => {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        mediaUrl: 'https://github.com/',
         mediaType: 2,
         previewType: 'pdf',
         title: 'o melhor Bot de Whatsapp',
         body: wm,
         thumbnail: imagen1,
-        sourceUrl: 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA',
+        sourceUrl: 'https://www.youtube.com/channel/',
       },
     },
     caption: info,

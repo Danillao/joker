@@ -6,13 +6,13 @@ const handler = async (m, {conn, usedPrefix}) => {
     const name = await conn.getName(m.sender);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const str = `
-*ミ💖 𝙷𝙾𝙻𝙰 ${taguser} 💖彡*
+*ミ💖 𝙾lá ${taguser} 💖彡*
 
-ㅤㅤ *🗳️<ℂ𝔸𝕁𝔸 𝔽𝕌𝔼ℝ𝕋𝔼/>🔐*
+ㅤㅤ *🗳️< CAIXA FORTE />🔐*
 
-- 𝙰𝚀𝚄𝙸 𝙿𝚄𝙴𝙳𝙴 𝙶𝚄𝙰𝚁𝙳𝙰𝚁 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰𝚂 𝚅𝙴𝚁 𝙼𝙰𝚂 𝚃𝙰𝚁𝙳𝙴
+- AQUI PODE GUARDAR MENSAGENS QUE PODE VER MAIS TARDE
 
-*<𝔸𝔾ℝ𝔼𝔾𝔸ℝ 𝔸 𝕃𝔸 𝕃𝕀𝕊𝕋𝔸/>*
+*< ADICIONAR A LISTA />*
 
 ° ඬ⃟🗳️ _${usedPrefix}agregarmsg *<texto/comando/palabra clave>* (responde a un texto)_
 ° ඬ⃟🗳️ _${usedPrefix}agregarvn *<texto/comando/palabra clave>* (responde a una nota de voz)_
